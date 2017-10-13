@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "page-scroll-to-id": "^1.5.8"
+  },
+  "name": "Mellennium",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Anatoliy24/Mellennium.git",
+  "author": "Anatoliy Kapp <Anatoliy_kapp@mail.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-sass-globbing": "^0.0.2",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "node-normalize-scss": "^3.0.0",
+    "node-sass": "^4.5.3"
+  }
+}

@@ -1,0 +1,214 @@
+include _components/head
+  title Главная
+body
+  wrapper
+    .content-wrapper
+      header.header
+        .header__bg
+          .container
+            .header__content
+              .row
+                .col-md-12
+                  .col-md-6
+                    h1.header__title
+                      | Banner header
+                    .header__desc
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                      | do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      | Ut enim ad minim veniam, quis nostrud
+                  .col-md-2
+                  .col-md-3
+                    form.form
+                      h3.header__form-title Request form
+                      .form__block-email
+                        input(type="text").header__form-input.header__form-input_email
+                        .form__block-cross
+                        .form__block-placeholder Enter your E-Mail
+                        .error-email Enter correct E-Mail
+                          .error-block
+                            .error-tr
+                      .form__block-name
+                        input(type="text").header__form-input.header__form-input_name
+                        .form__block-cross
+                        .form__block-placeholder Enter your name
+                        .error-name Enter correct name
+                          .error-block
+                            .error-tr
+                      .form__block-name
+                        select.header__form-select
+                          option(value="") Select your country
+                          -for(var i=1;i<7;i++){
+                            option(value="Country" + i)="Country" + i
+                          -}
+                        .error-select Select a country
+                          .error-block
+                            .error-tr
+
+                      .form__block-checkbox
+                        input(type="checkbox")#check
+                        label(for="check").header__form-label I agree with Terms & Conditions
+                        .error-checkbox Checkbox!
+                          .error-block
+                            .error-tr
+
+                      input(type="submit" value="Submit").form__input-submit.form__btn
+                      input(type="button" value="Hyperlink").form__input-button.form__btn
+      section.cards
+        .cards__bg
+          .container
+            .cards__content
+              .cards__row
+                .row
+                  .col-md-12
+                    .col-md-4
+                      .cards__bg-item
+                        img.img-responsive.cards__bg-img(src="./assets/img/cards/card_bg_1.jpg" alt='')
+                        .cards__desc
+                          .cards__desc-header
+                            .cards__desc-header-block
+                              h3.cards__desc-header-title Post header 1
+                              .cards__desc-header-fullscreen.img-responsive
+                              .cards__desc-text
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .col-md-4
+                      .cards__bg-item
+                        img.img-responsive.cards__bg-img(src="./assets/img/cards/card_bg_2.jpg" alt='')
+                        .cards__desc
+                          .cards__desc-header
+                            .cards__desc-header-block
+                              h3.cards__desc-header-title Post header 2
+                              .cards__desc-header-fullscreen.img-responsive
+                              .cards__desc-text
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .col-md-4
+                      .cards__bg-item
+                        img.img-responsive.cards__bg-img(src="./assets/img/cards/card_bg_3.jpg" alt='')
+                        .cards__desc
+                          .cards__desc-header
+                            .cards__desc-header-block
+                              h3.cards__desc-header-title Post header 3
+                              .cards__desc-header-fullscreen.img-responsive
+                              .cards__desc-text
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              .cards__row
+                .row
+                  .col-md-12
+                    .col-md-6
+                      .cards__bg-item
+                        img.img-responsive.cards__bg-img(src="./assets/img/cards/card_bg_4.jpg" alt='')
+                        .cards__desc
+                          .cards__desc-header
+                            .cards__desc-header-block
+                              h3.cards__desc-header-title Post header 4
+                              .cards__desc-header-fullscreen.img-responsive
+                              .cards__desc-text
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .col-md-6
+                      .cards__bg-item
+                        img.img-responsive.cards__bg-img(src="./assets/img/cards/card_bg_5.jpg" alt='')
+                        .cards__desc
+                          .cards__desc-header
+                            .cards__desc-header-block
+                              h3.cards__desc-header-title Post header 5
+                              .cards__desc-header-fullscreen.img-responsive
+                              .cards__desc-text
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      section.desc
+        .desc__bg
+          .container
+            .desc__content
+              .row
+                .col-md-12
+                  .col-md-6
+                    img.img-responsive.desc__img(src="./assets/img/content/monitor.png" alt='')
+                  .col-md-6
+                    h2.desc__title Title text
+                    ul.desc__list
+                      li.desc__list-item
+                        .desc__list-item-number
+                          .item-number-bg
+                            span 1
+                        .desc__list-item-text Duis aute irure dolor in reprehenderit1<sup>1</sup> in voluptate velit
+                          .desc__list-item-line
+                      li.desc__list-item
+                        .desc__list-item-number
+                          .item-number-bg
+                            span 2
+
+                        .desc__list-item-text Ullamco laboris nisi ut aliquip ex ea commodo consequat
+                          .desc__list-item-line
+                      li.desc__list-item
+                        .desc__list-item-number
+                          .item-number-bg
+                            span 3
+                        .desc__list-item-text Ut enim ad minim veniam, quis nostrud exercitation
+                          .desc__list-item-line
+                      li.desc__list-item
+                        .desc__list-item-number
+                          .item-number-bg
+                            span 4
+                        .desc__list-item-text Et dolore magna aliqua
+                          .desc__list-item-line
+                      li.desc__list-item
+                        .desc__list-item-number
+                          .item-number-bg
+                            span 5
+                        .desc__list-item-text Sed do eiusmod tempor<sup>2</sup> incididunt ut labore
+                          .desc__list-item-line
+                      li.desc__list-item
+                        .desc__list-item-number
+                          .item-number-bg
+                            span 6
+                        .desc__list-item-text Lorem ipsum dolor sit amet<sup>3</sup> consectetur adipisicing elit
+                          .desc__list-item-line
+
+      #myModal.modal.fade
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true')
+              h4.modal-title Заголовок
+            .modal-body
+              p Lorem ipsum orci malesuada cursus quisque ligula maecenas vivamus sodales. Vitae lorem ligula sagittis, integer eget tellus bibendum porttitor massa odio nam sed: nibh elementum. Proin, maecenas sed magna vivamus adipiscing sem: sagittis fusce maecenas ligula, leo sit ultricies gravida proin adipiscing ultricies elementum et integer quisque, sem porta.
+            .modal-footer
+              button.btn.btn-default.modal___input-button.modal__btn(type='button', data-dismiss='modal') Cancel
+              button.btn.btn-default.modal___input-submit.modal__btn(type='button', data-dismiss='modal') Accept
+
+
+      footer.footer
+        .footer__bg
+          .container
+            .footer__content
+              ul.footer__list
+                li.footer__list-item
+                  sup 1
+                  | Reprehenderit - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                li.footer__list-item
+                  sup 2
+                  | Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                li.footer__list-item
+                  sup 3
+                  | Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //
+    //    include _components/contacts
+    //    include _components/map
+    //    include _components/form
+  include _components/scripts
+
+
